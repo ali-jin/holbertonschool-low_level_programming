@@ -23,6 +23,7 @@ else
 {
 putchar('0' + num);
 }
+num++;
 }
 return (0);
 }
