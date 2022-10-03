@@ -18,14 +18,17 @@ n = rand() - RAND_MAX / 2;
 if (n > 0)
 {
 printf("is positive\n");
+return (0);
 }
 else if (n == 0)
 {
 printf("is zero\n");
+return (0);
 }
 else
 {
 printf("is negative\n");
+return (0);
 }
 return (0);
 }
