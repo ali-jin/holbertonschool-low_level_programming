@@ -25,7 +25,7 @@ printf("is zero\n");
 }
 else
 {
-prinf("is negative\n");
+printf("is negative\n");
 }
 return (0);
 }
