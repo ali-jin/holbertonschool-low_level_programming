@@ -10,12 +10,11 @@
  */
 int main(void)
 {
-char alphabet;
-alphabet = "a";
-while (alphabet <= "z")
+char ch = 'a';
+while (ch <= 'z')
 {
-putchar(alphabet);
-alphabet++;
+putchar(ch);
+ch++;
 }
 return (0);
 }
