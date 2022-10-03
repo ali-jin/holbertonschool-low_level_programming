@@ -10,8 +10,8 @@
  */
 int main(void)
 {
-char num = '0';
-while (num <= '10')
+char num = 0;
+while (num <= 10)
 {
 putchar('0' + num);
 num++;
