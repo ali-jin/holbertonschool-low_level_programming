@@ -9,8 +9,8 @@
 void jack_bauer(void)
 {
 int h, min;
-h = 00;
-min = 00;
+h = 0;
+min = 0;
 while (h <= 23)
 {
 if (h < 10)
@@ -18,7 +18,7 @@ if (h < 10)
 _putchar('0');
 }
 _putchar('0' + h);
-for (int i = 0; i < 60; i++)
+while (min <= 59)
 {
 _putchar(':');
 if (min < 10)
