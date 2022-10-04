@@ -15,6 +15,6 @@ if (n < 0)
 {
 n = (-1) * n;
 }
-_putchar(digit);
+_putchar('0' + digit);
 return (digit);
 }
