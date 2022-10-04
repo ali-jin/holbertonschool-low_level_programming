@@ -18,15 +18,14 @@ if (h < 10)
 _putchar('0');
 }
 _putchar('0' + h);
-while (min <= 59)
+for (int i = 0; i < 60; i++)
 {
 _putchar(':');
-if (h < 10)
+if (min < 10)
 {
 _putchar('0');
 }
 _putchar('0' + min);
-min++;
 }
 h++;
 _putchar('\n');
