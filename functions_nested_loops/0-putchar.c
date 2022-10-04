@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "main.h"
 /* more headers goes there */
 
 /**
@@ -8,6 +9,5 @@
  */
 int main(void)
 {
-printf('_putchar');
 return (0);
 }
