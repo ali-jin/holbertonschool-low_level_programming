@@ -10,7 +10,11 @@
  */
 int _isalpha(int c)
 {
-if (isalpha(c) == 1 && isalpha(c) == 2)
+if (c >= 'A' && c <= 'Z')
+{
+putchar('1');
+}
+else if (c >= 'a' && c <= 'z')
 {
 putchar('1');
 }
