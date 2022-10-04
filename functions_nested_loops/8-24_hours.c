@@ -26,6 +26,7 @@ if (min < 10)
 _putchar('0');
 }
 _putchar('0' + min);
+min++;
 }
 h++;
 _putchar('\n');
