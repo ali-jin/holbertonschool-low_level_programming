@@ -15,6 +15,6 @@ if (n < 0)
 n = (-1) * n;
 }
 int digit = n % 10;
-_putchar('0' + digit);
+_putchar(digit);
 return (digit);
 }
