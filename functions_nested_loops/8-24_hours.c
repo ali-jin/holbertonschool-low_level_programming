@@ -23,8 +23,7 @@ _putchar('0' + h2);
 _putchar(':');
 _putchar('0' + min1);
 _putchar('0' + min2);
-}
 _putchar('\n');
 }
-
+}
 }
