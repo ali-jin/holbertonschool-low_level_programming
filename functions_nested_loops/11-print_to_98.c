@@ -14,27 +14,25 @@ if (n < 98)
 {
 index = 98 - n;
 }
-else if (n > 98)
+else if (n > 99)
 {
 index = n - 98;
 }
-while (index < 98)
+for (index < 98; index++;)
 {
+int val = n % 100;
 if (n < 0)
 {
 _putchar('-');
 }
 if (n > 99 || n < -99)
 {
-int val2 = n % 100;
 _putchar('0' + (n / 100));
-_putchar('0' + (val2 / 10));
-_putchar('0' + (val2 % 2));
 }
 else
 {
-_putchar('0' + (n / 10));
-_putchar('0' + (n % 10));
+_putchar('0' + (val / 10));
+_putchar('0' + (val % 10));
 }
 if (n < 98)
 {
@@ -44,7 +42,11 @@ else
 {
 n--;
 }
-index++;
+if (n != 98)
+{
+_putchar(',');
+_putchar(' ');
+}
 }
 _putchar('\n');
 }
