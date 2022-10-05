@@ -18,9 +18,8 @@ else if (n > 99)
 {
 index = n - 98;
 }
-for (index < 98; index++;)
+while (index < 98)
 {
-int val = n % 100;
 if (n < 0)
 {
 _putchar('-');
@@ -31,8 +30,8 @@ _putchar('0' + (n / 100));
 }
 else
 {
-_putchar('0' + (val / 10));
-_putchar('0' + (val % 10));
+_putchar('0' + ((n % 100) / 10));
+_putchar('0' + ((n % 100) % 10));
 }
 if (n < 98)
 {
@@ -47,6 +46,7 @@ if (n != 98)
 _putchar(',');
 _putchar(' ');
 }
+index++;
 }
 _putchar('\n');
 }
