@@ -17,18 +17,26 @@ int res = tab * nb;
 if (res <= 9)
 {
 _putchar('0' + res);
+_putchar('0' + res);
 }
 else if (res > 9)
 {
 int value = res / 10;
 int value2 = res % 10;
 _putchar('0' + value);
-_putchar('0' + value2);
 }
 if (nb < 9)
 {
 _putchar(',');
+if (res <= 9)
+{
 _putchar(' ');
+}
+else if (res > 9)
+{
+_putchar(' ');
+_putchar(' ');
+}
 }
 }
 _putchar('\n');
