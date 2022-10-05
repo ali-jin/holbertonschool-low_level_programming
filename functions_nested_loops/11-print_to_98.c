@@ -11,39 +11,25 @@ void print_to_98(int n)
 {
 if (n < 98)
 {
-while (n < 98)
+for (; n <= 98; n++)
 {
-if (n < 0)
+printf("%d", n);
+if (n != 98)
 {
-_putchar('-');
+printf(", ");
 }
-if (n < -100)
-{
-_putchar('0' + n / 100);
-}
-_putchar('0' + ((n / 100) / 10));
-_putchar('0' + ((n / 100) % 10));
-_putchar(',');
-_putchar(' ');
-n++;
 }
 }
 else if (n > 98)
 {
-while (n > 98)
+for (; n >= 98; n--)
 {
-if (n > 100)
+printf("%d", n);
+if (n != 98)
 {
-_putchar('0' + n / 100);
-}
-_putchar('0' + ((n / 100) / 10));
-_putchar('0' + ((n / 100) % 10));
-_putchar(',');
-_putchar(' ');
-n--;
+printf(", ");
 }
 }
-_putchar('0' + 9);
-_putchar('0' + 8);
-_putchar('\n');
+}
+printf("\n");
 }
