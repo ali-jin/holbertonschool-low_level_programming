@@ -18,7 +18,7 @@ else if (n > 98)
 {
 index = n - 98;
 }
-for (int i = 0; i < index; i++)
+while (index < 98)
 {
 if (n < 0)
 {
@@ -44,6 +44,7 @@ else
 {
 n--;
 }
+index++;
 }
 _putchar('\n');
 }
