@@ -18,7 +18,7 @@ if (res <= 9)
 {
 _putchar('0' + res);
 }
-if else(res > 9)
+else if (res > 9)
 {
 int value = res / 10;
 int value2 = res % 10;
