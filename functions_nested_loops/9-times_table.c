@@ -28,15 +28,12 @@ _putchar('0' + value2);
 if (nb < 9)
 {
 _putchar(',');
+_putchar(' ');
 if (res <= 9)
 {
 _putchar(' ');
-_putchar(' ');
 }
-else if (res > 9)
-{
-_putchar(' ');
-}
+
 }
 }
 _putchar('\n');
