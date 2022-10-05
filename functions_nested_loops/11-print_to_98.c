@@ -17,7 +17,7 @@ if (n < 0)
 {
 _putchar('-');
 }
-if (n < -99)
+if (n < -100)
 {
 _putchar('0' + n / 100);
 }
@@ -32,7 +32,7 @@ else if (n > 98)
 {
 while (n > 98)
 {
-if (n > 99)
+if (n > 100)
 {
 _putchar('0' + n / 100);
 }
