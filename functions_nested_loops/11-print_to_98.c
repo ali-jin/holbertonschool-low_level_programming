@@ -11,7 +11,7 @@ void print_to_98(int n)
 {
 if (n < 98)
 {
-for (n; n < 98; n++)
+for (n < 98; n++;)
 {
 if (n < 10)
 {
@@ -28,7 +28,7 @@ _putchar(' ');
 }
 else if (n > 98)
 {
-for (n; n < 98; n++)
+for (n < 98; n++;)
 {
 if (n < 10)
 {
