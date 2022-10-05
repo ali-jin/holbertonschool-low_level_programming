@@ -9,12 +9,19 @@
 void times_table(void)
 {
 int tab, nb;
-for (tab = 0; tab < 10; tab++)
+for (tab = 0; tab <= 9; tab++)
 {
-for (nb = 0; nb < 10; nb++)
+for (nb = 0; nb <= 9; nb++)
 {
 int res = tab * nb;
+if (res <= 9)
+{
 _putchar('0' + res);
+}
+int value = res / 10;
+int value2 = res % 10;
+_putchar('0' + value);
+_putchar('0' + value2);
 if (nb < 9)
 {
 _putchar(',');
