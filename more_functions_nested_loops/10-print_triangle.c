@@ -23,6 +23,7 @@ for (j = 0; j <= i; j++)
 _putchar('#');
 }
 _putchar('\n');
+space--;
 }
 }
 else
