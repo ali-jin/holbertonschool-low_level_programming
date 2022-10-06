@@ -10,7 +10,8 @@ void more_numbers(void)
 int index = 0;
 while (index < 10)
 {
-for (char i = 0; i < 15; i++)
+int i;
+for (i = 0; i < 15; i++)
 {
 if (i > 9)
 {
