@@ -2,7 +2,7 @@
 #include "main.h"
 
 /**
- * fizz_buzz - Entry point
+ * main - Entry point
  *
  * Return: 0 (Success)
  */
