@@ -20,17 +20,15 @@ void puts_half(char *str)
 		{
 			_putchar(*(str + i));
 		}
-		_putchar('\n');
 	}
 	else
 	{
 		int h = (n / 2) + 1;
 
-		for (i = h; i < n; i++)
+		for (i = h; i < n - 1; i++)
 		{
 			_putchar(*(str + i));
 		}
-		_putchar('\n');
 	}
 	_putchar('\n');
 }
