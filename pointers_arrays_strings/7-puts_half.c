@@ -1,0 +1,29 @@
+#include <stdio.h>
+#include <string.h>
+#include "main.h"
+
+/**
+ * puts_half - Entry point
+ * @str: string
+ *
+ */
+void puts_half(char *str)
+{
+	int i;
+	int n = strlen(str);
+
+	if (n % 2 == 0)
+	{
+		int h = n / 2;
+
+		for (i = h; i < n; i++)
+		{
+			_putchar(*(str + i));
+		}
+	}
+	else
+	{
+		_putchar(*(str + n));
+	}
+	_putchar('\n');
+}
