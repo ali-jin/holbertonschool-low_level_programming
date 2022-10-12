@@ -3,7 +3,7 @@
 #include "main.h"
 
 /**
- * _strlen - Entry point
+ * leet - Entry point
  * @s: pointer string
  *
  * Return: i (Success)
@@ -17,7 +17,7 @@ char *leet(char *s)
 
 	while (*s)
 	{
-		for(i = 0; i < 5; i++)
+		for (i = 0; i < 5; i++)
 		{
 			if (*s == a[i] || *s == a[i] + 32)
 				*s = num[i] + '0';
