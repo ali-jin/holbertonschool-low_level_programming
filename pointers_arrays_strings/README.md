@@ -7,7 +7,7 @@
 6-puts2.c is a function that prints every other character of a string, starting with the first character, followed by a new line. <br/>
 7-puts_half.c is a function that prints half of a string, followed by a new line. <br/>
 8-print_array.c is a function that prints n elements of an array of integers, followed by a new line. <br/>
-9-strcpy.c is a function that copies the string pointed to by src, including the terminating null byte (\0), to the buffer pointed to by dest. <br/>
+9-strcpy.c is a function that copies the string pointed to by src, including the terminating null byte (\0), to the buffer pointed to by dest. <br/><br/>
 0-strcat.c is a function that concatenates two strings. This function appends the src string to the dest string, overwriting the terminating null byte (\0) at the end of dest, and then adds a terminating null byte<br/>
 1-strncat.c is a function that concatenates two strings. The _strncat function is similar to the _strcat function, except that it will use at most n bytes from src; and src does not need to be null-terminated if it contains n or more bytes <br/>
 2-strncpy.c is a function that copies a string. <br/>
@@ -15,4 +15,12 @@
 4-rev_array.c is a function that reverses the content of an array of integers. <br/>
 5-string_toupper.c is a function that changes all lowercase letters of a string to uppercase. <br/>
 6-cap_string.c is a function that capitalizes all words of a string. <br/>
-7-leet.c is a function that encodes a string into 1337.
+7-leet.c is a function that encodes a string into 1337. <br/><br/>
+0-memset.c is a function that fills memory with a constant byte. <br/>
+1-memcpy.c is a function that copies memory area. <br/>
+2-strchr.c is a function that locates a character in a string. <br/>
+3-strspn.c is a function that gets the length of a prefix substring. <br/>
+4-strpbrk.c is a function that searches a string for any of a set of bytes. <br/>
+5-strstr.c is a function that locates a substring. <br/>
+7-print_chessboard.c is a function that prints the chessboard. <br/>
+8-print_diagsums.c is a function that prints the sum of the two diagonals of a square matrix of integers.
