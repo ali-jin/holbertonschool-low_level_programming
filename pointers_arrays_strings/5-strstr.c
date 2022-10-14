@@ -14,7 +14,7 @@ int compare(char *c1, char *c2)
 	{
 		if (*c1 != *c2)
 		{
-			return 0;
+			return (0);
 		}
 		c1++;
 		c2++;
