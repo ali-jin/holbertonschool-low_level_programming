@@ -2,6 +2,27 @@
 #include "main.h"
 
 /**
+ * compare - Entry point
+ * @c1: pointer
+ * @c2: pointer
+ *
+ * Return: 0 or \0 (Success)
+ */
+int compare(char *c1, char *c2)
+{
+	while (*c1 && *c2)
+	{
+		if (*c1 != *c2)
+		{
+			return 0;
+		}
+		c1++;
+		c2++;
+	}
+	return (*c2 == '\0');
+}
+
+/**
  * _strstr - Entry point
  * @haystack: pointer
  * @needle: pointer
@@ -13,15 +34,17 @@ char *_strstr(char *haystack, char *needle)
 	char *hay = haystack;
 	char *nee = needle;
 
-	while (*nee != '\0')
+	while (*hay != '\0')
 	{
-		while (*hay != '\0')
+		if (*hay == *nee && compare(hay, nee) != 0)
 		{
-			if (*hay == *nee)
-				return (hay);
-			++hay;
+			return (hay);
 		}
-		++nee;
+		else if (compare(hay, nee) != 0)
+		{
+			return (hay);
+		}
+		hay++;
 	}
 	return (NULL);
 }
