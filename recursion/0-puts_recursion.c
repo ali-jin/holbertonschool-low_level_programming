@@ -27,7 +27,7 @@ int _strlen(char *s)
  */
 void _puts_recursion(char *s)
 {
-	int n = strlen(s);
+	int n = _strlen(s);
 
 	if (*s != '\0')
 	{
