@@ -2,7 +2,7 @@
 #include "main.h"
 
 /**
- * name - prints program name
+ * main - prints program name
  * @argc: Integer
  * @argv: Pointer
  *
