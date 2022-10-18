@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include "main.h"
+
+/**
+ * _memcpy - Entry point
+ * @dest: pointer
+ * @src: pointer
+ * @n: unsigned integer
+ *
+ * Return: Always s (Success)
+ */
+char *_memset(char *s, char b, unsigned int n)
+{
+	char *d = s;
+	char *s = b;
+	int i;
+
+	for (i = n - 1; i >= 0; i--)
+		d[i] = s[i];
+	return (s);
+}
