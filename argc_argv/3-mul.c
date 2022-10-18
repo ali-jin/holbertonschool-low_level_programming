@@ -15,10 +15,15 @@ int main(int argc, char *argv[])
 	int i;
 	int sum = 1;
 
-	for (i = 1; i < argc; i++)
+	if (argc > 2)
 	{
-		sum = sum * strtol(argv[i], &p, 10);
+		for (i = 1; i < argc; i++)
+		{
+			sum *= strtol(argv[i], &p, 10);
+		}
+		printf("%d\n", sum);
 	}
-	printf("%d\n", sum);
+	else
+		printf("Error\n");
 	return (0);
 }
