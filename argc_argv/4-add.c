@@ -61,7 +61,7 @@ int main(int argc, char *argv[])
 		{
 			sum = sum + strtol(argv[i], NULL, 10);
 		}
-		printf("%d\n", sum);
 	}
+	printf("%d\n", sum);
 	return (0);
 }
