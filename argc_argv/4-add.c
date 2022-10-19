@@ -13,13 +13,14 @@
  */
 int main(int argc, char *argv[])
 {
-	int i, sum, j = 0;
+	int i, sum = 0;
 	char *ptr;
 
-	for (i = 1; i < argc; i++)
+	i = 1;
+	while (i < argc)
 	{
 		ptr = argv[i];
-		for (j = 0; *ptr != '\0'; j++)
+		while (*ptr != '\0')
 		{
 			if (!(isdigit(*ptr)))
 			{
@@ -29,6 +30,7 @@ int main(int argc, char *argv[])
 			ptr++;
 		}
 		sum = sum + strtol(argv[i], NULL, 10);
+		i++;
 	}
 	printf("%d\n", sum);
 	return (0);
