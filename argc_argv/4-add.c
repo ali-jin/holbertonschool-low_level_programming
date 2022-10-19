@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <ctype.h>
 #include "main.h"
 
 /**
@@ -36,17 +37,22 @@ int _isdigit(int c, char *s)
  */
 int main(int argc, char *argv[])
 {
-	int i, sum, j, n = 0;
+	int i, sum, j = 0;
+	char *ptr;
 
 	if (argc <= 1)
 		printf("0\n");
-	for (j = 1; j < argc; j++)
+	for (i = 1; i < argc; i++)
 	{
-		n = strlen(argv[j]);
-		if (_isdigit(n, argv[j]) == 0)
+		ptr = argv[i];
+		for (j = 0; *ptr != '\0'; j++)
 		{
-			printf("Error\n");
-			return (1);
+			if (!(isdigit(*ptr)))
+			{
+				printf("Error\n");
+				return (1);
+			}
+			ptr++;
 		}
 	}
 	if (argc >= 2)
