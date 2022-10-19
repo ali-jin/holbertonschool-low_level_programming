@@ -40,8 +40,6 @@ int main(int argc, char *argv[])
 	int i, sum, j = 0;
 	char *ptr;
 
-	if (argc <= 1)
-		printf("0\n");
 	for (i = 1; i < argc; i++)
 	{
 		ptr = argv[i];
@@ -54,13 +52,7 @@ int main(int argc, char *argv[])
 			}
 			ptr++;
 		}
-	}
-	if (argc > 1)
-	{
-		for (i = 1; i < argc; i++)
-		{
-			sum = sum + strtol(argv[i], NULL, 10);
-		}
+		sum = sum + strtol(argv[i], NULL, 10);
 	}
 	printf("%d\n", sum);
 	return (0);
