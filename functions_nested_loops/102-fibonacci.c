@@ -8,7 +8,8 @@
 void fibonacci(void)
 {
 	long nb1, nb2 = 1;
-	int i, temp;
+	int i;
+    long temp;
 
 	for (i = 0; i < 50; i++)
 	{
