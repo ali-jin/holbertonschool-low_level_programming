@@ -15,7 +15,7 @@ int main(void)
 		j = i + 1;
 		while (j <= 8)
 		{
-			l = i + 2;
+			l = j + 1;
 			while (l <= 9)
 			{
 				if (l != i && l != j)
