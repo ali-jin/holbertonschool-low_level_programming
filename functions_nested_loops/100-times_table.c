@@ -18,7 +18,8 @@ void print_times_table(int n)
 			{
 				int res = tab * nb;
 
-				if (nb >= 0 && res < 10)
+				i = 0;
+				if (nb > 0 && res < 10)
 					i = 3;
 				else if (res > 9 && res < 100)
 					i = 2;
