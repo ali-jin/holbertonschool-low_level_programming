@@ -5,7 +5,7 @@
  * fibonacci - Entry point
  *
  */
-void fibonacci(void)
+int main(void)
 {
 	long nb1, nb2 = 1;
 	int i;
