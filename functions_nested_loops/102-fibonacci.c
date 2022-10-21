@@ -8,10 +8,10 @@
 void fibonacci(void)
 {
 	long nb1, nb2 = 1;
-	int i;
+	int i = 0;
 	long temp;
 
-	for (i = 0; i < 50; i++)
+	while (i < 50)
 	{
 		temp = nb1;
 		nb1 += nb2;
@@ -19,6 +19,7 @@ void fibonacci(void)
 		nb2 = temp;
 		if (i < 49)
 			printf(", ");
+		i++;
 	}
 	printf("\n");
 }
