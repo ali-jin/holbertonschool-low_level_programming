@@ -5,7 +5,7 @@
  * fibonacci - Entry point
  *
  */
-int main(void)
+void fibonacci(void)
 {
 	long nb1, nb2 = 1;
 	int i;
@@ -21,5 +21,10 @@ int main(void)
 			printf(", ");
 	}
 	printf("\n");
+}
+
+int main(void)
+{
+	fibonacci();
 	return (0);
 }
