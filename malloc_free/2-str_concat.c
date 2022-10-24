@@ -33,9 +33,18 @@ char *str_concat(char *s1, char *s2)
 	int i, j, len1, len2;
 	char *ptr;
 
+	if (s1 == NULL && s2 == NULL)
+	{
+		s1 = "";
+		s2 = "";
+	}
+	if (s1 == NULL)
+		s1 = "";
+	else if (s2 == NULL)
+		s2 = "";
+
 	len1 = _strlen(s1);
 	len2 = _strlen(s2) + len1;
-
 	ptr = malloc(len2 + 1);
 	i = 0;
 	while (i < len1)
@@ -43,7 +52,6 @@ char *str_concat(char *s1, char *s2)
 		ptr[i] = s1[i];
 		i++;
 	}
-
 	j = i;
 	i = 0;
 	while (j < len2)
