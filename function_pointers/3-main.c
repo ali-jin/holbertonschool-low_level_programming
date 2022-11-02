@@ -17,18 +17,18 @@ int main(int argc, char *argv[])
 
 	if (argc != 4)
 	{
-		printf("ERROR\n");
+		printf("Error\n");
 		exit(98);
 	}
 	if ((op == '%' || op == '/') && !(atoi(argv[3])))
 	{
-		printf("ERROR\n");
+		printf("Error\n");
 		exit(100);
 	}
 	operation.f = get_op_func(&op);
 	if (operation.f == NULL)
 	{
-		printf("ERROR\n");
+		printf("Error\n");
 		exit(99);
 	}
 	sum = operation.f(atoi(argv[1]), atoi(argv[3]));
