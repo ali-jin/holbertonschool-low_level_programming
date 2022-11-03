@@ -8,4 +8,16 @@ void print_numbers(const char *separator, const unsigned int n, ...);
 void print_strings(const char *separator, const unsigned int n, ...);
 void print_all(const char * const format, ...);
 
+/**
+ * struct print - Struct print
+ *
+ * @pt: The argument
+ * @f: The function associated
+ */
+typedef struct print
+{
+	char *pt;
+	void (*f)(va_list ptr);
+} print_t;
+
 #endif
