@@ -10,14 +10,14 @@
  */
 int sum_them_all(const unsigned int n, ...)
 {
-	int sum = 0, i;
+	int sum = 0, i, len = n;
 
 	/* Declaring pointer to the argument list */
 	va_list ptr;
 	/* Initializing argument to the list pointer */
 	va_start(ptr, n);
 
-	for (i = 0; i < n; i++)
+	for (i = 0; i < len; i++)
 	{
 		sum += va_arg(ptr, int);
 	}
