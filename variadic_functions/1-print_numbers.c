@@ -4,7 +4,7 @@
 
 /**
  * print_numbers - sum of all its parameters
- * @separator: string
+ * @separator: string to be printed between numbers
  * @n: number of integers
  *
  */
@@ -15,10 +15,19 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 
 	va_start(ptr, n);
 
-	for (i = 0; i < len - 1; i++)
+	if (n == 0)
+		exit(EXIT_SUCCESS);
+
+	else
 	{
-		printf("%d%s", va_arg(ptr, int), separator);
+		for (i = 0; i < len - 1; i++)
+		{
+			if (separator == NULL)
+				printf("%d", va_arg(ptr, int));
+			else
+				printf("%d%s", va_arg(ptr, int), separator);
+		}
+		printf("%d\n", va_arg(ptr, int));
+		va_end(ptr);
 	}
-	printf("%d\n", va_arg(ptr, int));
-	va_end(ptr);
 }
