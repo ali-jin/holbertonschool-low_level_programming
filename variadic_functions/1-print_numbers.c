@@ -1,7 +1,6 @@
 #include "variadic_functions.h"
 #include <stdio.h>
 #include <stdarg.h>
-#include <stdlib.h>
 
 /**
  * print_numbers - sum of all its parameters
@@ -17,7 +16,7 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	va_start(ptr, n);
 
 	if (n == 0)
-		exit(EXIT_SUCCESS);
+		printf("\n");
 
 	else
 	{
