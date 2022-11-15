@@ -26,7 +26,7 @@ int _strlen(char *s)
  * @head: list_t list
  * @str: new node
  *
- * Return: number of elements
+ * Return: address of new element
  */
 list_t *add_node(list_t **head, const char *str)
 {
