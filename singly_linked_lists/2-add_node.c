@@ -30,14 +30,26 @@ int _strlen(char *s)
  */
 list_t *add_node(list_t **head, const char *str)
 {
-	list_t *first;
-	char *copy = strdup(str);
-	int lenght = _strlen(copy);
+	list_t* new_node;
+	char *copy;
+	int lenght;
 
-	first = malloc(sizeof(list_t));
-	first->str = copy;
-	first->len = lenght;
-	first->next = (*head);
-	(*head) = first;
-	return (first);
+	new_node = malloc(sizeof(list_t));
+	if (new_node == NULL)
+		return (NULL);
+
+	copy = strdup(str);
+	if (copy == NULL)
+	{
+		free(new_node);
+		return (NULL);
+	}
+	lenght = _strlen(copy);
+
+	new_node->str = copy;
+	new_node->len = lenght;
+	new_node->next = *head;
+	*head = new_node;
+
+	return (new_node);
 }
