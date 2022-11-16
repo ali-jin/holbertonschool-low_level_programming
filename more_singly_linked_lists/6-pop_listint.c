@@ -9,13 +9,15 @@
 int pop_listint(listint_t **head)
 {
 	listint_t *DelNode;
+	int tmp;
 
 	if (head == NULL)
 		return (0);
 
 	DelNode = *head;
+	tmp = (*head)->n;
 	*head = (*head)->next;
 	free(DelNode);
 
-	return (DelNode->n);
+	return (tmp);
 }
