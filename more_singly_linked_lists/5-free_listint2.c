@@ -7,13 +7,16 @@
  */
 void free_listint2(listint_t **head)
 {
-	listint_t *currentNode;
+	listint_t *nxtnode, *tmpnode;
 
-	while (*head != NULL)
+	tmpnode = *head;
+
+	while (tmpnode)
 	{
-		currentNode = *head;
-		free(currentNode->next);
-		currentNode->next = *head;
-		*head = NULL;
+		nxtnode = tmpnode->next;
+		free(tmpnode);
+		tmpnode = nxtnode;
 	}
+
+	*head = NULL;
 }
