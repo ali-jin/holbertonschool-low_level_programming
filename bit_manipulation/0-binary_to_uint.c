@@ -36,7 +36,6 @@ int _pow(int x, int y)
 	return (power);
 }
 
-
 /**
  * binary_to_uint - converts a binary number to an unsigned int
  * @b: binary number(s)
@@ -46,22 +45,24 @@ int _pow(int x, int y)
 unsigned int binary_to_uint(const char *b)
 {
 	unsigned int sum = 0;
-	int i, pow, bin, j = _strlen(b) - 1;
+	int pow, bin, i;
 
 	if (b == NULL)
 		return (0);
 
 	for (i = 0; b[i] != '\0'; i++)
 	{
+		if (b[i] != '0' || b[i] != '1')
+			return (0);
+	}
+	for (; b[i] != '\0'; i++)
+	{
 		if (b[i] == '0')
 			bin = 0;
-		else if (b[i] == '1')
+		if (b[i] == '1')
 			bin = 1;
-		else
-			return (0);
-		pow = _pow(2, j);
+		pow = _pow(2, i);
 		sum = sum + (bin * pow);
-		j--;
 	}
 	return (sum);
 }
