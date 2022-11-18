@@ -6,9 +6,9 @@
  *
  * Return: count
  */
-int countSetBits(int n)
+int countSetBits(unsigned long int n)
 {
-	int count = 0;
+	unsigned long int count = 0;
 
 	while (n > 0)
 	{
