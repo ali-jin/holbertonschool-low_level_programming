@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * add_dnodeint - returns the number of elements in a linked list
+ * add_dnodeint - add new node at the front
  * @head: dlistint_t list
  * @n: value of new node
  *
