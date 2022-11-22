@@ -36,6 +36,7 @@ Write a function that reads a text file and prints it to the `POSIX` standard ou
 - if the file can not be opened or read, return `0`
 - if `filename` is `NULL` return `0`
 - if `write` fails or does not write the expected amount of bytes, return `0`
+- File: `0-read_textfile.c`
 
 -------------------------
 ### 1. Under the snow
@@ -48,6 +49,7 @@ Create a function that creates a file.
 - if the file already exists, truncate it
 - if `filename` is `NULL` return `-1`
 - if `text_content` is `NULL` create an empty file
+- File: `1-create_file.c`
 
 -------------------------
 ### 2. Speak gently, she can hear
@@ -59,6 +61,7 @@ Write a function that appends text at the end of a file.
 - Do not create the file if it does not exist
 - If `filename` is `NULL` return `-1`
 - If `text_content` is `NULL`, do not add anything to the file. Return `1` if the file exists and `-1` if the file does not exist or if you do not have the required permissions to write the file
+- File: `2-append_text_to_file.c`
 
 -------------------------
 ### 3. cp
@@ -76,3 +79,4 @@ Write a program that copies the content of a file to another file.
 - Permissions of the created file: `rw-rw-r--`. If the file already exists, do not change the permissions
 - You must read `1,024` bytes at a time from the `file_from` to make less system calls. Use a buffer
 - You are allowed to use `dprintf`
+- File: `3-cp.c`
