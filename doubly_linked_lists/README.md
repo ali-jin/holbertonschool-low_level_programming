@@ -20,6 +20,26 @@ Doubly linked list is a complex type of linked list in which a node contains a p
 - All your files will be compiled on Ubuntu 20.04 LTS using `gcc`, using the options `-Wall -Werror -Wextra -pedantic -std=gnu89`
 - The only C standard library functions allowed are `malloc`, `free`, `printf` and `exit`
 
+## More Info
+### Data Structures
+```c
+/**
+ * struct dlistint_s - doubly linked list
+ * @n: integer
+ * @prev: points to the previous node
+ * @next: points to the next node
+ *
+ * Description: doubly linked list node structure
+ *
+ */
+typedef struct dlistint_s
+{
+	int n;
+	struct dlistint_s *prev;
+	struct dlistint_s *next;
+} dlistint_t;
+```
+
 -------------------------
 ## Tasks
 
