@@ -23,7 +23,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 		free(copyValue);
 		return (0);
 	}
-	index = key_index(k, ht->size)
+	index = key_index(k, ht->size);
 
 	for (i = index; ht->array[i]; i++)
 	{
