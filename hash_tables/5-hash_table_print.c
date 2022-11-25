@@ -8,28 +8,28 @@
  */
 void hash_table_print(const hash_table_t *ht)
 {
-	unsigned long int i, len = ht->size;
+	unsigned long int i;
 	hash_node_t *item;
 	char *comma = "";
 
 	if (ht == NULL)
 		return;
-	if (ht != NULL)
+
+	printf("{");
+	i = 0;
+	while (i < ht->size)
 	{
-		printf("{");
-		for (i = 0; i < len; i++)
+		if (ht->array[i] != NULL)
 		{
-			if (ht->array[i] != NULL)
+			item = ht->array[i];
+			while (item != NULL)
 			{
-				item = ht->array[i];
-				while (item != NULL)
-				{
-					printf("%s'%s': '%s'", comma, item->key, item->value);
-					comma = ", ";
-					item = item->next;
-				}
+				printf("%s'%s': '%s'", comma, item->key, item->value);
+				comma = ", ";
+				item = item->next;
 			}
 		}
-		printf("}\n");
+		i++;
 	}
+	printf("}\n");
 }
