@@ -30,6 +30,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 		if (strcmp(ht->array[i]->key, key) == 0)
 		{
 			free(ht->array[i]->value);
+			free(item);
 			ht->array[i]->value = copyValue;
 			return (1);
 		}
@@ -37,6 +38,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	item->key = strdup(key);
 	if (item->key == NULL)
 	{
+		free(item->key);
 		free(item);
 		return (0);
 	}
