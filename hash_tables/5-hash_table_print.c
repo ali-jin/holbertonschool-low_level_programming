@@ -20,10 +20,16 @@ void hash_table_print(const hash_table_t *ht)
 			if (ht->array[i] != NULL)
 			{
 				item = ht->array[i];
-				printf("%s'%s': '%s'", comma, item->key, item->value);
-				comma = ", ";
+				while (item != NULL)
+				{
+					printf("%s'%s': '%s'", comma, item->key, item->value);
+					comma = ", ";
+					item = item->next;
+				}
 			}
 		}
 		printf("}\n");
 	}
+	else
+		return;
 }
