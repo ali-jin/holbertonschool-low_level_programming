@@ -5,6 +5,12 @@
 ## Description
 Like arrays, Linked List is a linear data structure. Unlike arrays, linked list elements are not stored at a contiguous location; the elements are linked using pointers. They include a series of connected nodes. Here, each node stores the data and the address of the next node.
 
+## Resources
+### Read or Watch:
+- [Linked Lists](https://www.youtube.com/watch?v=udapt4FGY20&t=130s)
+- [What is Linked List](https://www.geeksforgeeks.org/what-is-linked-list/)
+- [Linked List Program in C](https://www.tutorialspoint.com/data_structures_algorithms/linked_list_program_in_c.htm)
+
 ## Header
 ```c
 #include <stdio.h>
